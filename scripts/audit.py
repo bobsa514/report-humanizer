@@ -68,6 +68,12 @@ def strip_markdown(text: str):
             continue
         if b.startswith(("|", "!", "Figure ", "Table ", ">")) or b.startswith("*Source"):
             continue
+        if re.match(r"^\s*(?:[-*+]|\d+\.)\s", b):
+            # A list item is not a prose paragraph. Its opening is a label by
+            # design, and a labelled item may legitimately carry a colon, so it
+            # is exempt from the rhythm check in S37 and the splice check in S36.
+            out.append(("list", b))
+            continue
         if re.match(r"^\*[^*]+\*$", b):      # italic caption line
             continue
         out.append(("prose", b))
