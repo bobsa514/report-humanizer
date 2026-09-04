@@ -130,7 +130,24 @@ def audit(path: str, verbose: bool = False) -> int:
             print(f"          {s[:150]}")
 
     # -- 37. runs of short paragraph openers ----------------------------------
-    short = [i for i, p in enumerate(prose) if len(sentences(p)[0].split()) < 14]
+    # Letter furniture is exempt. Upstream's false-positive rule: "Salutations
+    # and sign-offs predate ChatGPT by centuries." A paragraph ending in a colon
+    # is a list lead-in, and a vocative opener is ordinary in a memo.
+    SALUTATION = re.compile(
+        r"^(?:hi|hello|dear|hey|thanks|thank you|best|regards|sincerely|cheers)\b"
+        r"|^[A-Z][a-z]+(?:\s+(?:and|&)\s+[A-Z][a-z]+)*[,.]?$", re.I)
+    VOCATIVE = re.compile(r"^[A-Z][a-z]+(?:\s+(?:and|&)\s+[A-Z][a-z]+)*,\s")
+
+    def is_furniture(par: str) -> bool:
+        s = par.strip()
+        if SALUTATION.match(s) or VOCATIVE.match(s):
+            return True
+        if s.endswith(":"):          # introduces a list or block
+            return True
+        return False
+
+    short = [i for i, p in enumerate(prose)
+             if len(sentences(p)[0].split()) < 14 and not is_furniture(p)]
     runs, cur = [], []
     for i in short:
         if cur and i == cur[-1] + 1:
