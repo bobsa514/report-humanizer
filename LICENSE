@@ -11,6 +11,11 @@ the rewrite process) are derived from the humanizer skill:
 which is in turn based on Wikipedia's "Signs of AI writing", maintained by
 WikiProject AI Cleanup and available under CC BY-SA 4.0.
 
+Note: sections 1 through 35 of SKILL.md adapt that Wikipedia material, so the
+CC BY-SA 4.0 share-alike terms apply to those sections (used here with
+attribution, following the upstream humanizer project's approach). Everything
+else in this repository is MIT as stated below.
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
