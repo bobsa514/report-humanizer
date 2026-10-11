@@ -409,9 +409,9 @@ The seven patterns below were not caught by a standard pass. Each is followed by
 > The constraint operates in a chain, with consumption limiting the array and the array in turn limiting storage power.
 
 **Before:**
-> The petitioner's underlying observation is therefore correct: developers do design to a limit.
+> The underlying observation is therefore correct: developers do design to a limit.
 **After:**
-> The petitioner's underlying observation that developers design to a limit is therefore correct.
+> The underlying observation that developers design to a limit is therefore correct.
 
 Split the colon into a sentence boundary, or fold the elaboration into the clause. Do not swap a colon for a dash, which trades one tell for another. Target: fewer than one splice per thousand words, with legitimate colons uncounted.
 
@@ -422,17 +422,17 @@ Split the colon into a sentence boundary, or fold the elaboration into the claus
 **Problem:** AI writing opens a paragraph with a short declarative claim, then spends the rest of the paragraph supporting it. One is fine. A run of them produces a rhythm no human sustains, and reviewers hear it even when they cannot name it.
 
 **Before (four consecutive paragraph openings):**
-> The population is concentrated. One contractor installed 285 of the 302 projects...
+> The population is concentrated. One contractor installed the large majority of the projects...
 >
-> The 2026 cohort is not representative. Those applications were submitted during...
+> That year's cohort is not representative. Those applications were submitted during...
 >
 > No cost figure is available. All comparisons rest on published benchmarks...
 >
 > Reservations are not final. The adjustment uses the median offset...
 **After:**
-> One contractor installed 285 of the 302 projects, so the findings describe that firm's practice more than a market.
+> One contractor installed the large majority of the projects, so the findings describe that firm's practice more than a market.
 >
-> The 2026 application cohort was submitted during the rush to qualify before the deadline and is not representative of steady-state behavior.
+> That year's application cohort was submitted during the rush to qualify before the deadline and is not representative of steady-state behavior.
 >
 > All comparisons rest on published benchmarks for the reasons given in Section 3, so no cost figure is available.
 >
@@ -473,9 +473,9 @@ If "conservative" needs defending, define it once in the methods section rather 
 **Problem:** A clause promises the reader an insight, and the paragraph then delivers that insight anyway. This is §28 at the paragraph level rather than the section level, and it usually rides on a colon.
 
 **Before:**
-> The funding waitlists provide independent confirmation and a design insight: during the 2021 waitlist, payment was postponed and the plug-in share fell by 2.1 points.
+> The funding waitlists provide independent confirmation and a design insight: during one waitlist round, payment was postponed and participation fell measurably.
 **After:**
-> The funding waitlists confirm this independently. During the 2021 waitlist, payment was postponed and the plug-in share fell by 2.1 points.
+> The funding waitlists confirm this independently. During one waitlist round, payment was postponed and participation fell measurably.
 
 Delete the announcement. Nothing is lost, because the paragraph already makes the point.
 
@@ -490,7 +490,7 @@ Delete the announcement. Nothing is lost, because the paragraph already makes th
 > No single approach can identify the effect, because the program changed alongside other policies.
 **After:**
 > ## Methods
-> The program ran for fourteen years with several funding pauses and design changes, and each of those moments can be used to observe how the market responded when the incentive changed. Four such moments are analyzed here.
+> The program ran for well over a decade with several funding pauses and design changes, and each of those moments can be used to observe how the market responded when the incentive changed. Several such moments are analyzed here.
 
 Every numbered section gets one orienting paragraph before its first subsection: what the section covers and in what order. Put the caveat after it.
 
